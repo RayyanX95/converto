@@ -9,8 +9,8 @@ import classes from "./NavigationBar.module.css";
 
 const NavigationBar = () => {
     return (
-        <div>
-            <Navbar className={classes.Color} variant="dark" expand="lg">
+        <div className={classes.Color}>
+            <Navbar variant="dark" expand="lg">
                 <Navbar.Brand href="#home">Converter</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

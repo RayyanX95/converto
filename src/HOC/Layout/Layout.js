@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import NavigationBar from "../../components/NavigationBar/NavigationBar";
+import Footer from '../../components/Footer/Footer';
 import classes from './Layout.module.css';
 
 class Layout extends Component {
@@ -19,9 +20,10 @@ class Layout extends Component {
         return (
             <React.Fragment>
                 <NavigationBar />
-                <div className={classes.Content + ' container pt-5'}>
+                <div className={classes.Content + ' container py-5'}>
                     {this.props.children}
                 </div>
+                <Footer />
             </React.Fragment>
         )
     }

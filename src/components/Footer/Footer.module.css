@@ -1,0 +1,8 @@
+.Footer {
+    width: 100%;
+    background-color: grey;
+    height: 100px;
+}
+.Footer p{
+    color: whitesmoke;
+}

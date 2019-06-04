@@ -40,6 +40,7 @@ class InputHandling extends Component {
             else {
                 toVal = fromVal * fromUnitRatio / toUnitRatio;
             }
+            toVal = toVal.toFixed(2);
             this.setState({ toUnitVal: toVal })
         }, 1)
     }

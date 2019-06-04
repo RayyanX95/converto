@@ -11,13 +11,12 @@ import './App.css'
 class App extends Component {
   render() {
     return (
-      <div>
-        {/* <div className={classes.Plural}> I'm plural dive</div> */}
+      <React.Fragment>
         <Layout>
           <UnitSelector />
           <InputHandling />
         </Layout>
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -1,4 +1,5 @@
 import * as actionTypes from "./actions";
+import { allUnits } from '../data/units';
 
 const initialSate = {
   unitTypeId: null,
@@ -7,12 +8,19 @@ const initialSate = {
 };
 
 const reducer = (state = initialSate, action) => {
-  
+
   switch (action.type) {
     case actionTypes.SELECT_UNIT_TYPE:
+      let unitTypeId = action.typeEvent.target.value;
+      if (!unitTypeId)
+        unitTypeId = 1;
+      console.log('typeID: ', unitTypeId);
+      
+      const chosenUnit = allUnits.find(unit => unit.id === +unitTypeId);
+      const fromTO = chosenUnit.fromTo;
       return {
         ...state,
-        unitTypeId: action.typeEvent.target.value
+        chosenFromToUnit: fromTO
       };
 
     case actionTypes.SELECT_FROM_UNIT:

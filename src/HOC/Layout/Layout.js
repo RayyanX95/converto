@@ -19,7 +19,7 @@ class Layout extends Component {
         return (
             <React.Fragment>
                 <NavigationBar />
-                <div className={classes.Content + ' container'}>
+                <div className={classes.Content + ' container pt-5'}>
                     {this.props.children}
                 </div>
             </React.Fragment>

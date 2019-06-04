@@ -1,0 +1,4 @@
+export const SELECT_UNIT_TYPE = 'SELECT_UNIT_TYPE';
+export const SELECT_FROM_UNIT = 'SELECT_FROM_UNIT';
+export const SELECT_TO_UNIT = 'SELECT_TO_UNIT';
+

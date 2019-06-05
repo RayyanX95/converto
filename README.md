@@ -9,7 +9,7 @@
 * [Challenges](#Challenges)
 * [Release](#Release)
 * [Contributing](#Contributing)
-* [V2 Features](#V2_Features)
+<!-- * [V2 Features](#V2_Features) -->
 
 ## Converto
 
@@ -21,6 +21,9 @@ Converto is a React web app that converts units
 
 ## Visuals
 click on [Converto](https://rayyan995.github.io/converter/#/) to try the app and see it live.
+* Image for mobile responsive:<br />
+![List of units to select from](https://github.com/Rayyan995/converter/blob/master/screenshots/c_mobile_view.png)
+
 
 ## Requirements
 
@@ -60,10 +63,12 @@ To run this app on your local machine there are some dependencies you have to in
 
 ## Challenges
 There was only big challenge, It was how to store all units in a hierarchy that makes it easy to deal with them and extract them to show on the screen as next two images image:
+* From Unit List: <br />
 ![List of units to select from](https://github.com/Rayyan995/converter/blob/master/screenshots/c_from.png)
+* To Unit List: <br />
 ![List of units to select from](https://github.com/Rayyan995/converter/blob/master/screenshots/c_to.png)
 
-I tried to set them in next from that makes it too easy to with the units:
+I tried to set them in a form that makes it easy to deal with the units, next code:
 ``` js
 export const allUnits = [
     // length units

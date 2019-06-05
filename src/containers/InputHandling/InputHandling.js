@@ -14,6 +14,7 @@ class InputHandling extends Component {
             let toVal;
             const fromUnitRatio = this.props.fromRatio;
             const toUnitRatio = this.props.toRatio;
+            
             /* we get unit Id to handle units that have special converting equation such
              temperature units where 0 Celsius = 273.15 Kelvin*/
             const unitTypeId = this.props.unTypeId;
@@ -57,7 +58,7 @@ class InputHandling extends Component {
                 fromChgHdl={this.fromChangeHandler}
                 fromValue={this.state.fromUnitVal}
                 toValue={this.state.toUnitVal}
-                disableFromTo={this.props.disableFromTo} />
+                disableFromInput={this.props.disableFromInput} />
         )
     }
 }
@@ -67,7 +68,7 @@ const mapStateToProps = state => {
         unTypeId: state.unitTypeId,
         fromRatio: state.fromUnitRatio,
         toRatio: state.toUnitRatio,
-        disableFromTo: state.disableFromTo
+        disableFromInput: state.disableFromInput
     };
 };
 

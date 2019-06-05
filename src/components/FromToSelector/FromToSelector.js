@@ -14,7 +14,7 @@ export default function FromToSelector(props) {
                     <option defaultChecked>Choose Unit From</option>
                     {
                         props.chosenUnits.map(unit =>
-                            <option key={unit.id} value={unit.value} >{unit.name}</option>
+                            <option key={unit.name} value={unit.value} >{unit.name}</option>
                         )
                     }
                 </select>
@@ -29,7 +29,7 @@ export default function FromToSelector(props) {
                     <option defaultChecked>Choose Unit To</option>
                     {
                         props.chosenUnits.map(unit => 
-                            <option key={unit.id} value={unit.value}>{unit.name}</option>
+                            <option key={unit.name} value={unit.value}>{unit.name}</option>
                         )
                     }
                 </select>

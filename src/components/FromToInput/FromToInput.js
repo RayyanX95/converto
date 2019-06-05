@@ -13,7 +13,7 @@ export default function FromToInput(props) {
                 </div>
                 <input type="number" onChange={props.fromChgHdl}
                     className={classes.Disable + " form-control"} value={props.fromValue}
-                    disabled={props.disableFromTo} />
+                    disabled={props.disableFromInput} />
             </div>
 
             {/* to input */}

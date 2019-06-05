@@ -53,7 +53,11 @@ class InputHandling extends Component {
     }
     render() {
         return (
-            <FromToInput fromChgHdl={this.fromChangeHandler} fromValue={this.state.fromUnitVal} toValue={this.state.toUnitVal} />
+            <FromToInput
+                fromChgHdl={this.fromChangeHandler}
+                fromValue={this.state.fromUnitVal}
+                toValue={this.state.toUnitVal}
+                disableFromTo={this.props.disableFromTo} />
         )
     }
 }
@@ -63,6 +67,7 @@ const mapStateToProps = state => {
         unTypeId: state.unitTypeId,
         fromRatio: state.fromUnitRatio,
         toRatio: state.toUnitRatio,
+        disableFromTo: state.disableFromTo
     };
 };
 

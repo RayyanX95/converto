@@ -9,10 +9,6 @@ import * as actionTypes from "../../store/actions";
 
 let CHOSEN_UNIT;
 class UnitSelector extends Component {
-    state = {
-        units: allUnits,
-        chosenUnitFromTo: allUnits[0].fromTo, // make length as default chosen
-    }
     // unitTypeHandler = () => {
     //     setTimeout(() => {
     //         const unitTypeId = this.props.unTypeId;
@@ -28,8 +24,6 @@ class UnitSelector extends Component {
         CHOSEN_UNIT = this.props.chosenUnit;
         if(!CHOSEN_UNIT)
             CHOSEN_UNIT = allUnits[0].fromTo
-        console.log('chosen: ', CHOSEN_UNIT);
-
         return (
             <React.Fragment>
                 <UnitType 
@@ -39,7 +33,8 @@ class UnitSelector extends Component {
                 <FromToSelector
                     chosenUnits={CHOSEN_UNIT}
                     fromUnitHandler={(e) => this.props.onSelectFromUnit(e)}
-                    toUnitHandler={(e) => this.props.onSelectToUnit(e)} />
+                    toUnitHandler={(e) => this.props.onSelectToUnit(e)}
+                    disableFromTo={this.props.disableFromTo} />
             </React.Fragment>
         );
     }
@@ -48,6 +43,7 @@ class UnitSelector extends Component {
 const mapStateToProps = state => {
     return {
         chosenUnit: state.chosenFromToUnit,
+        disableFromTo: state.disableFromTo
     };
 };
 

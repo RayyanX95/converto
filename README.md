@@ -6,6 +6,7 @@
 * [Description](#Description)
 * [Visuals](#Visuals)
 * [Requirements](#Requirements)
+* [Run The App](#Run_The_App)
 * [Challenges](#Challenges)
 * [Release](#Release)
 * [Contributing](#Contributing)
@@ -59,6 +60,16 @@ To run this app on your local machine there are some dependencies you have to in
 
 ``` js
     < Route path = "/home" component = {Home} />
+```
+
+## Run_The_App
+To install all **dependencies** use your **Command Line** to browse to the project folder and hit:
+``` bash
+npm install
+```
+then hit the next command to run the app:
+``` bash
+npm start
 ```
 
 ## Challenges

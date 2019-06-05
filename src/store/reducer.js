@@ -5,6 +5,7 @@ const initialSate = {
   unitTypeId: null,
   fromUnitRatio: null,
   toUnitRatio: null,
+  disableFromTo: true
 };
 
 const reducer = (state = initialSate, action) => {
@@ -12,15 +13,20 @@ const reducer = (state = initialSate, action) => {
   switch (action.type) {
     case actionTypes.SELECT_UNIT_TYPE:
       let unitTypeId = action.typeEvent.target.value;
-      if (!unitTypeId)
-        unitTypeId = 1;
+      let disableFromTo = false;
       console.log('typeID: ', unitTypeId);
-      
+
+      // if the selected is the title of options not a proper option, say [slect unit type] 
+      if (!+unitTypeId) {
+        unitTypeId = 1;
+        disableFromTo = true; // disable [from unit list again]
+      }
       const chosenUnit = allUnits.find(unit => unit.id === +unitTypeId);
-      const fromTO = chosenUnit.fromTo;
+      const fromTo = chosenUnit.fromTo;
       return {
         ...state,
-        chosenFromToUnit: fromTO
+        chosenFromToUnit: fromTo,
+        disableFromTo: disableFromTo
       };
 
     case actionTypes.SELECT_FROM_UNIT:

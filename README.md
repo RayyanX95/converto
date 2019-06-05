@@ -2,15 +2,14 @@
 
 ## Table of Contents
 
-* [Overview](#Overview)
-* [V1 Challenges](#V1_Challenges)
-* [V1 Features](#V1_Features)
-* [V1 Tools](#V1_Tools)
-* [V2 Challenges](#V2_Challenges)
-* [V2 Features](#V2_Features)
-* [V2 Tools](#V2_Tools)
+* [Name](#Converto)
+* [Description](#Description)
+* [Visuals](#Visuals)
+* [Requirements](#Requirements)
+* [Challenges](#Challenges)
 * [Release](#Release)
-* [Screenshots](#Screenshots)
+* [Contributing](#Contributing)
+* [V2 Features](#V2_Features)
 
 ## Converto
 
@@ -21,6 +20,7 @@ Converto is a React web app that converts units
 **Converto** is an **React** web application built using ` ReactJS ` . **Converto** is an application that aims to convert from a unit to another such as from foot to inch and vice versa. This app has the most common units such length units, time units, ...etc. click on [Converto](https://rayyan995.github.io/converter/#/) to try the app and see it live.
 
 ## Visuals
+click on [Converto](https://rayyan995.github.io/converter/#/) to try the app and see it live.
 
 ## Requirements
 
@@ -58,7 +58,12 @@ To run this app on your local machine there are some dependencies you have to in
     < Route path = "/home" component = {Home} />
 ```
 
- 
+## Challenges
+There were two challenges **first**, how to store all units in a hierarchy that makes it easy to them and extract them show them in the screen as next image:
+![List of units to select from](https://github.com/Rayyan995/converter/blob/master/screenshots/c_from.png)
+
+## Release 
+The application has been deployed to Github and can be found [here](https://rayyan995.github.io/converter/#/)
 
 ## Contributing
 

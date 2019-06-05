@@ -22,7 +22,7 @@ export default function FromToSelector(props) {
                     className="browser-default custom-select"
                     onChange={props.toUnitHandler}
                 >
-                    <option defaultChecked>Choose Unit From</option>
+                    <option defaultChecked>Choose Unit To</option>
                     {
                         props.chosenUnits.map(unit => 
                             <option key={unit.id} value={unit.value}>{unit.name}</option>

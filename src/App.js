@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import Layout from "./HOC/Layout/Layout";
 import UnitSelector from './containers/UnitSelector/UnitSelector';
+import AlertMessage from './components/AlertMessage/AlertMessage';
 import InputHandling from './containers/InputHandling/InputHandling';
 
 import './App.css'
@@ -15,6 +16,7 @@ class App extends Component {
           <UnitSelector />
           <InputHandling />
         </Layout>
+        <AlertMessage />
       </React.Fragment>
     );
   }

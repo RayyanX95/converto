@@ -10,7 +10,7 @@ const UnitType = (props) => {
                     className="browser-default custom-select"
                     onChange={props.unitHandler}
                 >
-                    <option defaultChecked value={0}>Choose Unit</option>
+                    <option defaultChecked value={0}>Choose Unit Type</option>
                     {
                         props.units.map(unit =>
                             <option key={unit.id} value={unit.id}>{unit.name}</option>

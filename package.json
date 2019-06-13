@@ -1,7 +1,7 @@
 {
   "name": "converto",
   "version": "0.1.0",
-  "homepage": "https://rayyan995.github.io/converter/",
+  "homepage": "https://rayyan995.github.io/converto/",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",

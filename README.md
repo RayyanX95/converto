@@ -149,7 +149,7 @@ export const allUnits = [
 ```
 
 ## Release 
-The application has been deployed to Github and can be found [here](https://rayyan995.github.io/converter/#/).
+The application has been deployed to Github and can be found [here](https://rayyanx95.github.io/converto/#/).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
